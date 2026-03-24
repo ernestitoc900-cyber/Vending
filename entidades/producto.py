@@ -8,4 +8,11 @@ class Producto:
         self.tipo = tipo 
 
     def mostrar(self):
-        return f"Producto(nombre: {self.nombre}, precio: {self.precio}, cantidad: {self.cantidad}, tipo: {self.tipo})"
+        if self.tipo == TipoProducto.PAN:
+            return "Pan"
+        elif self.tipo == TipoProducto.BEBIDA:
+            return "Bebida"
+        elif self.tipo == TipoProducto.SNACK:
+            return "Snack"
+        else:
+            return "Otro"
