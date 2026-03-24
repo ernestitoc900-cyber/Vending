@@ -9,10 +9,10 @@ class Producto:
 
     def mostrar(self):
         if self.tipo == TipoProducto.PAN:
-            return "Pan"
+            return f"Pan ${self.precio}"
         elif self.tipo == TipoProducto.BEBIDA:
-            return "Bebida"
+            return f"Bebida ${self.precio}"
         elif self.tipo == TipoProducto.SNACK:
-            return "Snack"
+            return f"Snack ${self.precio}"
         else:
-            return "Otro"
+            return f"Otro ${self.precio}"
